@@ -201,11 +201,15 @@ $(document).ready(function(){
 	});
 	// end form loan
 
-	$('.homerun').on('click',function(e) {
+	// fallback procedure
+	$('#homerun').on('click',function(e) {
 		e.preventDefault();
 		$('.logincontainer').hide();
 		$('.loancontainer').hide();
 		$('.returncontainer').hide();
 		$('.homecontainer').show();
 	});
+
+	// end fallback procedure
+
 });
