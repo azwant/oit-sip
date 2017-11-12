@@ -202,7 +202,14 @@ $(document).ready(function(){
 	// end form loan
 
 	// fallback procedure
-	$('#homerun').on('click',function(e) {
+	$('#homerunloan').on('click',function(e) {
+		e.preventDefault();
+		$('.logincontainer').hide();
+		$('.loancontainer').hide();
+		$('.returncontainer').hide();
+		$('.homecontainer').show();
+	});
+	$('#homerunreturn').on('click',function(e) {
 		e.preventDefault();
 		$('.logincontainer').hide();
 		$('.loancontainer').hide();
