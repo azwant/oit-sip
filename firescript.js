@@ -53,7 +53,7 @@ $(document).ready(function(){
 	          
 	        })
 	        .catch(function(error) {
-	          console.log("Login Failed!", error);
+	          alert("Login Failed!", error);
 	          // $('#messageModalLabel').html(spanText('ERROR: '+error.code, ['danger']))
 	        });
 	    }
@@ -209,7 +209,13 @@ $(document).ready(function(){
 		$('.returncontainer').hide();
 		$('.homecontainer').show();
 	});
-
+	$('#logout').on('click',function(e) {
+		e.preventDefault();
+		$('.loancontainer').hide();
+		$('.returncontainer').hide();
+		$('.homecontainer').hide();
+		$('.logincontainer').show();
+	});
 	// end fallback procedure
 
 });
