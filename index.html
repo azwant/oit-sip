@@ -2,263 +2,250 @@
 <html>
 	<head>
 		<title>Onsite Inventory Tracking (OIT)</title>
-			<link href="./bootstrap.min.css" rel="stylesheet"> 
-			<link href="./styles.css" rel="stylesheet">
+		<link href="./bootstrap.min.css" rel="stylesheet"> 
+		<link href="./styles.css" rel="stylesheet">
 	</head>
-<body>
-<div class="container">
-	<!--admin login-->
-	<div class="row logincontainer">
-		<div class="col-md-7 col-md-offset-7 centering">
-			<div class="text-center"><h3><strong>Onsite Inventory Tracking (OIT)</strong></h3></div>
-			<div class="panel panel-default">
-				<div class="panel-heading"><h4><strong>Onsite Login</strong></h4></div>
-				<div class="panel-body">
-				<div class="text-center"><img alt="" src="./schlumberger_logo3.png"></div>
-					<div>
-						<p class="text-center">
-							<small>Welcome to Onsite Inventory Tracking, please login to use:</small>
-						</p>
-					</div>
-					<form class="form-horizontal" role="form">
-						<input type="hidden" name="_token" value="PDFRulN1RpOBfTgsXXJKFImejy6OgnGWui5ztRm0">
-						<div class="form-group">
-							<label class="col-md-4 control-label">Username:</label>
-							<div class="col-md-6">
-								<input type="text" class="form-control loginuser" name="alias" placeholder="LDAP Alias" value="">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-md-4 control-label">Password:</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control loginpass" name="password" placeholder="LDAP Password">
-							</div>
-						</div>
+	<body>
+	<div class="container">
 
-						<div class="form-group">
-							<div class="col-md-12 text-center">
-								<button type="submit" class="btn btn-primary submitforlogin">Login OIT</button>
-							</div>
+		<!--start-admin-login-->
+		<div class="row logincontainer">
+			<div class="col-md-7 col-md-offset-7 centering">
+				<div class="text-center"><h3><strong>Onsite Inventory Tracking (OIT)</strong></h3></div>
+				<div class="panel panel-default">
+					<div class="panel-heading"><h4><strong>Onsite Login</strong></h4></div>
+					<div class="panel-body">
+					<div class="text-center"><img alt="" src="./schlumberger_logo3.png"></div>
+						<div>
+							<p class="text-center ">
+								<small>Welcome to Onsite Inventory Tracking, please login to use:</small>
+							</p>
 						</div>
-					</form>					
-					<div>
-						<p class="text-muted text-center ">
-						<small>Copyright © 2017 Schlumberger and Universiti Teknologi PETRONAS<br>
-						Support and development by <a target="_blank" href="http://directory.slb.com/query.cgi?alias=AAli249">Azwan Ali</a><br>
-						<a href="mailto:AAli249@slb.com?subject=OIT%20Issues%20Report">Click here to report issues</a>
+						<form class="form-horizontal" role="form">
+							<input type="hidden" name="_token" value="PDFRulN1RpOBfTgsXXJKFImejy6OgnGWui5ztRm0">
+							<div class="form-group">
+								<label class="col-md-4 control-label">Username:</label>
+								<div class="col-md-6">
+									<input type="text" class="form-control loginuser" name="alias" placeholder="LDAP Alias" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 control-label">Password:</label>
+								<div class="col-md-6">
+									<input type="password" class="form-control loginpass" name="password" placeholder="LDAP Password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-12 text-center">
+									<button type="submit" class="btn btn-primary submitforlogin">Login OIT</button>
+								</div>
+							</div>
+						</form>					
+						<div>
+							<p class="text-muted text-center ">
+							<small>Copyright © 2017 Schlumberger and Universiti Teknologi PETRONAS<br>
+							Support and development by <a target="_blank" href="http://directory.slb.com/query.cgi?alias=AAli249">Azwan Ali</a><br>
+							<a href="mailto:AAli249@slb.com?subject=OIT%20Issues%20Report">Click here to report issues</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- end login -->
+		<!-- end-admin-login -->
 
-	<!-- begin home -->
-	<div class="row homecontainer">
-		<div class="col-md-6 col-md-offset-3">
-			<div class="text-center"><h2><strong>Onsite Inventory Tracking</strong></h2></div>
-			<div class="panel panel-default">
-				<div class="panel-heading"><h4><strong>Home</strong></h4></div>
-				<div class="panel-body">
-					<!-- <form id="frm-ticket" class="form-horizontal" role="form" method="POST" action="http://quickticket.ithelp.slb.com/login"> -->
+		<!--start-home-page-->
+		<div class="row homecontainer">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="text-center"><h3><strong>Onsite Inventory Tracking (OIT)</strong></h3></div>
+				<div class="panel panel-default">
+					<div class="panel-heading"><h4><strong>Home Page</strong></h4></div>
+					<div class="panel-body">
 						<div class="text-center"><img alt="" src="./schlumberger_logo3.png"></div>
 						<div class="form-group">
-							<div class="text-center">Welcome <strong>Nama Admin</strong></div>
 							<div class="text-center" id="logout">Logout</div>
-						</div>
-												
+						</div>					
 						<div class="form-group" id="status-box" style="display:none;">
 							<div class=" col-md-10 col-md-offset-1 ">
 								<div class="alert " style="margin-bottom: 0px;">
-									
 								</div>
 							</div>
 						</div>
-
 						<div class="form-group">
 							<div class="text-center">
 								<button type="button" class="btn btn-primary" id="homeloan">
-									Loan
+									Loan Item
 								</button>
 								<button type="button" class="btn btn-primary" id="homereturn">
-									Return
+									Return Item
 								</button>
 							</div>
 						</div>
-				    <!-- </form> -->
-				    
-					<div>
-						<p class="text-muted text-center ">
-						<small>Copyright © 2017 Schlumberger and Universiti Teknologi PETRONAS<br>
-						Support and development by <a target="_blank" href="http://directory.slb.com/query.cgi?alias=AAli249">Azwan Ali</a><br>
-						<a href="mailto:AAli249@slb.com?subject=OIT%20Issues%20Report">Click here to report issues</a>
-					</div>
-		    	</div>
-		    </div>
-		</div>
-	</div>
-	<!-- end home -->
-	<!-- begin loan -->
-	<div class="row loancontainer">
-		<div class="col-md-7 col-md-offset-7">
-			<div class="text-center"><h2><strong>Onsite Inventory Tracking</strong></h2></div>
-			<div class="panel panel-default">
-				<div class="panel-heading"><h4><strong>Loan Form</strong></h4></div>
-				<div class="panel-body">
-					<form class="form-horizontal" role="form">
-						<div class="text-center"><img alt="" src="./schlumberger_logo3.png"></div>
-						<div class="form-group">
-							<div class="text-center">Welcome <strong>Nama Admin</strong></div>
-							<div class="text-center" id="logout">Logout</div>
+					    <div>
+							<p class="text-muted text-center ">
+							<small>Copyright © 2017 Schlumberger and Universiti Teknologi PETRONAS<br>
+							Support and development by <a target="_blank" href="http://directory.slb.com/query.cgi?alias=AAli249">Azwan Ali</a><br>
+							<a href="mailto:AAli249@slb.com?subject=OIT%20Issues%20Report">Click here to report issues</a>
 						</div>
-												
-						<div class="form-group" id="status-box" style="display:none;">
-							<div class=" col-md-10 col-md-offset-1 ">
-								<div class="alert " style="margin-bottom: 0px;">
-									
+			    	</div>
+			    </div>
+			</div>
+		</div>
+		<!--end-home-page-->
+
+		<!--start-loan-page-->
+		<div class="row loancontainer">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="text-center"><h3><strong>Onsite Inventory Tracking (OIT)</strong></h3></div>
+				<div class="panel panel-default">
+					<div class="panel-heading"><h4><strong>Loan Form</strong></h4></div>
+					<div class="panel-body">
+						<form class="form-horizontal" role="form">
+							<div class="text-center"><img alt="" src="./schlumberger_logo3.png"></div>
+							<div class="form-group">
+								<div class="text-center" id="logout">Logout</div>
+							</div>				
+							<div class="form-group" id="status-box" style="display:none;">
+								<div class=" col-md-10 col-md-offset-1 ">
+									<div class="alert" style="margin-bottom: 0px;">
+									</div>
 								</div>
 							</div>
-						</div>
-						
-						<div class="form-group">
-							<label class="col-md-3 col-md-offset-1 col-xs-12">Customer</label>
-							
-							<div class="col-md-5 col-xs-7 col-sm-9">
-								<input type="text" class="form-control" id="customername" name="customername" placeholder="LDAP Alias">
+							<div class="form-group">
+								<label class="col-md-3 col-md-offset-1 col-xs-12">Customer</label>
+								<div class="col-md-5 col-xs-7 col-sm-9">
+									<input type="text" class="form-control" id="customername" name="customername" placeholder="LDAP Alias Here">
+								</div>
+								<div class="col-md-2 col-xs-5 col-sm-3">
+						            <button type="button" class="btn btn-primary" id="customersearch">
+						            	Search
+						            </button>
+						        </div>	       
 							</div>
-							<div class="col-md-2 col-xs-5 col-sm-3">
-					            <button type="button" class="btn btn-primary" id="customersearch">
-					            	Search
-					            </button>
-					        </div>
-					        			       
-						</div>
-
-						<div class="form-group">
-							<label class="col-md-3 col-md-offset-1 col-xs-12">Item to Loan</label>
-							<div class="col-md-5 col-xs-7 col-sm-9">
-								<input type="text" class="form-control" id="itemcode" name="itemcode" placeholder="Click the button to scan">						
+							<div class="form-group">
+								<label class="col-md-3 col-md-offset-1 col-xs-12">Item to Loan</label>
+								<div class="col-md-5 col-xs-7 col-sm-9">
+									<input type="text" class="form-control" id="itemcode" name="itemcode" placeholder="Item QR Here">
+								</div>
+								<div class="col-md-2 col-xs-5 col-sm-3">
+						            <button type="button" class="btn btn-primary" id="getlatestqr">
+						            	Get QR
+						            </button>
+						        </div>	       
 							</div>
-							<div class="col-md-2 col-xs-5 col-sm-3">
-					            <button type="button" class="btn btn-primary" id="getlatestqr">
-					            	Get Code
-					            </button>
-					        </div>	       
-						</div>
-
-						<div class="form-group">
-							<label class="col-md-3 col-md-offset-1 col-xs-12">Loan Duration</label>
-							<div class="col-md-5 col-xs-7 col-sm-9">
-								<input type="number" class="form-control" id="loanduration" name="loanduration" placeholder="7 Days">
+							<div class="form-group">
+								<label class="col-md-3 col-md-offset-1 col-xs-12">Loan Duration</label>
+								<div class="col-md-5 col-xs-7 col-sm-9">
+									<input type="number" class="form-control" id="loanduration" name="loanduration" placeholder="7 Days">
+								</div>
+								<div class="col-md-2 col-xs-5 col-sm-3">
+						            Days
+						        </div>				       
 							</div>
-							<div class="col-md-2 col-xs-5 col-sm-3">
-					            Days
-					        </div>				       
-						</div>
-
-						<div class="form-group">
-							<div class="text-center">
-								<button type="button" class="btn btn-primary" id="homerunloan">
-									Back to Home
-								</button>
-								<button type="button" class="btn btn-primary" id="formloan">
-									Submit Loan Form
-								</button>
-							</div>
-						</div>
-				    </form>
-				    
-					<div>
-						<p class="text-muted text-center ">
-						<small>Copyright © 2017 Schlumberger and Universiti Teknologi PETRONAS<br>
-						Support and development by <a target="_blank" href="http://directory.slb.com/query.cgi?alias=AAli249">Azwan Ali</a><br>
-						<a href="mailto:AAli249@slb.com?subject=OIT%20Issues%20Report">Click here to report issues</a>
-					</div>
-		    	</div>
-		    </div>
-		</div>
-	</div>
-	<!-- end loan -->
-	<!-- begin return -->
-	<div class="row returncontainer">
-		<div class="col-md-7 col-md-offset-7">
-			<div class="text-center"><h2><strong>Onsite Inventory Tracking</strong></h2></div>
-			<div class="panel panel-default">
-				<div class="panel-heading"><h4><strong>Return Form</strong></h4></div>
-				<div class="panel-body">
-					<form class="form-horizontal" role="form">
-						<div class="text-center"><img alt="" src="./schlumberger_logo3.png"></div>
-						<div class="form-group">
-							<div class="text-center">Welcome <strong>Nama Admin</strong></div>
-							<div class="text-center" id="logout">Logout</div>
-						</div>
-												
-						<div class="form-group" id="status-box" style="display:none;">
-							<div class=" col-md-10 col-md-offset-1 ">
-								<div class="alert " style="margin-bottom: 0px;">
-									
+							<div class="form-group">
+								<div class="text-center">
+									<button type="button" class="btn btn-primary" id="homerunloan">
+										Home
+									</button>
+									<button type="button" class="btn btn-primary" id="formloan">
+										Submit Loan Form
+									</button>
 								</div>
 							</div>
+					    </form>
+					    <div>
+							<p class="text-muted text-center ">
+							<small>Copyright © 2017 Schlumberger and Universiti Teknologi PETRONAS<br>
+							Support and development by <a target="_blank" href="http://directory.slb.com/query.cgi?alias=AAli249">Azwan Ali</a><br>
+							<a href="mailto:AAli249@slb.com?subject=OIT%20Issues%20Report">Click here to report issues</a>
 						</div>
-						
-						<div class="form-group">
-							<label class="col-md-3 col-md-offset-1 col-xs-12">Customer</label>
-							
-							<div class="col-md-5 col-xs-7 col-sm-9">
-								<input type="text" class="form-control" id="customernamereturn" name="customernamereturn" placeholder="LDAP Alias">						
-							</div>
-							<div class="col-md-2 col-xs-5 col-sm-3">
-					            <button type="button" class="btn btn-primary" id="customersearchreturn">
-					            	Search
-					            </button>
-					        </div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-md-3 col-md-offset-1 col-xs-12">Loaned Item</label>
-							
-							<div class="col-md-5 col-xs-7 col-sm-9" >
-								<input type="text" class="form-control" id="returnqrcode" name="returnqrcode" placeholder="Qr here ">						
-							</div>
-							<div class="col-md-2 col-xs-5 col-sm-3">
-					            <button type="button" class="btn btn-primary" id="fetchreturnqrcode">
-					            	Get QR
-					            </button>
-					        </div>
-						</div>
-
-						<div class="form-group">
-							<div class="text-center">
-								<button type="button" class="btn btn-primary" id="homerunreturn">
-									Back to Home
-								</button>
-								<button type="button" class="btn btn-primary" id="formreturn">
-									Return
-								</button>
-							</div>
-						</div>
-				    </form>
-					<div>
-						<p class="text-muted text-center ">
-						<small>Copyright © 2017 Schlumberger and Universiti Teknologi PETRONAS<br>
-						Support and development by <a target="_blank" href="http://directory.slb.com/query.cgi?alias=AAli249">Azwan Ali</a><br>
-						<a href="mailto:AAli249@slb.com?subject=OIT%20Issues%20Report">Click here to report issues</a>
-					</div>
-		    	</div>
-		    </div>
+			    	</div>
+			    </div>
+			</div>
 		</div>
+		<!-- end-loan-page-->
+
+		<!-- begin return -->
+		<div class="row returncontainer">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="text-center"><h2><strong>Onsite Inventory Tracking</strong></h2></div>
+				<div class="panel panel-default">
+					<div class="panel-heading"><h4><strong>Return Form</strong></h4></div>
+					<div class="panel-body">
+						<form class="form-horizontal" role="form">
+							<div class="text-center"><img alt="" src="./schlumberger_logo3.png"></div>
+							<div class="form-group">
+								<div class="text-center">Welcome <strong>Nama Admin</strong></div>
+								<div class="text-center" id="logout">Logout</div>
+							</div>
+													
+							<div class="form-group" id="status-box" style="display:none;">
+								<div class=" col-md-10 col-md-offset-1 ">
+									<div class="alert " style="margin-bottom: 0px;">
+										
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-md-3 col-md-offset-1 col-xs-12">Customer</label>
+								
+								<div class="col-md-5 col-xs-7 col-sm-9">
+									<input type="text" class="form-control" id="customernamereturn" name="customernamereturn" placeholder="LDAP Alias">						
+								</div>
+								<div class="col-md-2 col-xs-5 col-sm-3">
+						            <button type="button" class="btn btn-primary" id="customersearchreturn">
+						            	Search
+						            </button>
+						        </div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 col-md-offset-1 col-xs-12">Loaned Item</label>
+								
+								<div class="col-md-5 col-xs-7 col-sm-9" >
+									<input type="text" class="form-control" id="returnqrcode" name="returnqrcode" placeholder="Qr here ">						
+								</div>
+								<div class="col-md-2 col-xs-5 col-sm-3">
+						            <button type="button" class="btn btn-primary" id="fetchreturnqrcode">
+						            	Get QR
+						            </button>
+						        </div>
+							</div>
+
+							<div class="form-group">
+								<div class="text-center">
+									<button type="button" class="btn btn-primary" id="homerunreturn">
+										Back to Home
+									</button>
+									<button type="button" class="btn btn-primary" id="formreturn">
+										Return
+									</button>
+								</div>
+							</div>
+					    </form>
+					    
+					    <div>
+							<p class="text-muted text-center ">
+							<small>Copyright © 2015 Schlumberger - Powered by the Bogota Service Desk<br>
+							Support and development by <a target="_blank" href="http://www.eureka.slb.com/CNP.cfm?uid=alberto-20120110">Alberto Russell</a><br>
+							<a href="mailto:ARussell82@slb.com?subject=GSD%20Quick%20Ticket%20Tool%20Issues">Click here to report issues</a> - <a href="http://quickticket.ithelp.slb.com/guide/GSD_Quick_Ticket_Tool-User_Guide.pdf">Download User Guide</a></small>
+							</p>
+						</div>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+		<!-- end return -->
 	</div>
-	<!-- end return -->
-</div>
-<!-- end container -->
-<!-- script begin -->
-<!-- initialize firebase -->
+	<!-- end container -->
+	<!-- script begin -->
+	<!-- initialize firebase -->
 
-<script src="./jquery-2.1.3.min.js.download"></script>
-<script src="./bootstrap.min.js.download"></script>
+	<script src="./jquery-2.1.3.min.js.download"></script>
+	<script src="./bootstrap.min.js.download"></script>
 
-<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
-<script src="./firescript.js"></script>
-<!-- end script -->
-</body>
+	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+	<script src="./firescript.js"></script>
+	<!-- end script -->
+	</body>
 </html>
