@@ -146,7 +146,6 @@ $(document).ready(function(){
 	                console.log('Sorry. Could not send message.');
 	            } else {
 	                console.log("Message has been sent.");
-	                // hide the form
 	            }
 	        };
 			var formdata = {
@@ -201,7 +200,7 @@ $(document).ready(function(){
 	});
 	// end form loan
 
-	// fallback procedure
+// fallback procedure
 	$('#homerunloan').on('click',function(e) {
 		e.preventDefault();
 		$('.logincontainer').hide();
@@ -224,5 +223,4 @@ $(document).ready(function(){
 		$('.logincontainer').show();
 	});
 	// end fallback procedure
-
 });
